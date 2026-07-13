@@ -72,7 +72,7 @@ const handleSubmit = async (e) => {
   // Validation
   if (!formData.name || !formData.description || !formData.price || 
       !formData.category || !formData.stock) {
-    alert('Please fill all required fields');
+    alert('Please fill all required fi  elds');
     return;
   }
 
