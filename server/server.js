@@ -1,9 +1,10 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
-import connectDB from './config/database.js';
+
 import productRoutes from './routes/productRoutes.js';
 import { errorHandler } from './middleware/errorHandler.js';
+import { connectDB } from './config/database.js';
 
 // Load environment variables
 dotenv.config();
