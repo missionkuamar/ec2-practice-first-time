@@ -15,10 +15,10 @@ const PORT = process.env.PORT || 8000;
 // Debugging - print env variables on startup
 console.log("=== ENVIRONMENT VARIABLES ===");
 console.log("PORT:", process.env.PORT);
-console.log("MONGODB_URI:", process.env.MONGODB_URI ? "Set" : "Not set");
-console.log("CLOUDINARY_CLOUD_NAME:", process.env.CLOUDINARY_CLOUD_NAME);
-console.log("CLOUDINARY_API_KEY:", process.env.CLOUDINARY_API_KEY ? "Set" : "Not set");
-console.log("CLOUDINARY_API_SECRET:", process.env.CLOUDINARY_API_SECRET ? "Set" : "Not set");
+// console.log("MONGODB_URI:", process.env.MONGODB_URI ? "Set" : "Not set");
+// console.log("CLOUDINARY_CLOUD_NAME:", process.env.CLOUDINARY_CLOUD_NAME);
+// console.log("CLOUDINARY_API_KEY:", process.env.CLOUDINARY_API_KEY ? "Set" : "Not set");
+// console.log("CLOUDINARY_API_SECRET:", process.env.CLOUDINARY_API_SECRET ? "Set" : "Not set");
 
 // Connect to database
 connectDB();

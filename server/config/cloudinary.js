@@ -3,10 +3,10 @@ import { v2 as cloudinary } from 'cloudinary';
 import { CloudinaryStorage } from 'multer-storage-cloudinary';
 import dotenv from 'dotenv';
 dotenv.config()
-console.log('=== CLOUDINARY CONFIG ===');
-console.log('Cloud Name:', process.env.CLOUDINARY_CLOUD_NAME);
-console.log('API Key exists:', !!process.env.CLOUDINARY_API_KEY);
-console.log('API Secret exists:', !!process.env.CLOUDINARY_API_SECRET);
+// console.log('=== CLOUDINARY CONFIG ===');
+// console.log('Cloud Name:', process.env.CLOUDINARY_CLOUD_NAME);
+// console.log('API Key exists:', !!process.env.CLOUDINARY_API_KEY);
+// console.log('API Secret exists:', !!process.env.CLOUDINARY_API_SECRET);
 
 // Configure Cloudinary
 cloudinary.config({
@@ -15,12 +15,12 @@ cloudinary.config({
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
-console.log('Cloudinary configured');
+// console.log('Cloudinary configured');
 
 // Test connection
-cloudinary.api.ping()
-  .then(result => console.log('Cloudinary connection test:', result))
-  .catch(err => console.error('Cloudinary connection error:', err));
+// cloudinary.api.ping()
+//   .then(result => console.log('Cloudinary connection test:', result))
+//   .catch(err => console.error('Cloudinary connection error:', err));
 
 // Create storage engine
 const storage = new CloudinaryStorage({
